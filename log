@@ -1598,3 +1598,16 @@ exercises.c:138:20: error: expected ‘;’ before ‘}’ token
       | ~                   
 Compilation failed
 5bc65b3
+Fri 12 Aug 2022 10:15:35 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:138:19: error: expected ‘;’ before ‘}’ token
+  138 |   sumaV(v1, v2, c)
+      |                   ^
+      |                   ;
+  139 | }
+      | ~                  
+Compilation failed
+44e0cf0
