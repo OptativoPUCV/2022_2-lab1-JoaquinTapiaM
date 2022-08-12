@@ -481,3 +481,31 @@ exercises.c:63:17: error: expected expression before ‘=’ token
       |                 ^
 Compilation failed
 aab97e2
+Fri 12 Aug 2022 07:18:17 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:17: error: ‘persona’ is a pointer; did you mean to use ‘->’?
+   61 |   strcpy(persona.nombre*,nombre);
+      |                 ^
+      |                 ->
+exercises.c:61:25: error: expected expression before ‘,’ token
+   61 |   strcpy(persona.nombre*,nombre);
+      |                         ^
+exercises.c:62:17: error: ‘persona’ is a pointer; did you mean to use ‘->’?
+   62 |   strcpy(persona.rut*,rut);
+      |                 ^
+      |                 ->
+exercises.c:62:22: error: expected expression before ‘,’ token
+   62 |   strcpy(persona.rut*,rut);
+      |                      ^
+exercises.c:63:10: error: ‘persona’ is a pointer; did you mean to use ‘->’?
+   63 |   persona.edad* = edad;
+      |          ^
+      |          ->
+exercises.c:63:17: error: expected expression before ‘=’ token
+   63 |   persona.edad* = edad;
+      |                 ^
+Compilation failed
+f7bae9e
