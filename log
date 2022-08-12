@@ -1147,3 +1147,14 @@ exercises.c:82:21: error: ‘vector’ is used uninitialized in this function [-
 cc1: all warnings being treated as errors
 Compilation failed
 421cdba
+Fri 12 Aug 2022 09:46:36 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:82:21: error: ‘vector’ is used uninitialized in this function [-Werror=uninitialized]
+   82 |   vector->capacidad = n;
+      |   ~~~~~~~~~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+17558a2

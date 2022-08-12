@@ -78,8 +78,8 @@ typedef struct {
 } Vector;
 
 Vector* crearVector(int n) {
-  Vector * vector;
-  vector->capacidad = 4;
+  Vector *vector;
+  vector->capacidad = n;
   vector->datos = (int*)calloc(vector->capacidad,sizeof(int));
   return vector;
 }
