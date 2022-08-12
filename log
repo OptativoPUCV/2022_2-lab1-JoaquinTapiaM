@@ -1577,3 +1577,24 @@ exercises.c:137:20: error: expected ‘;’ before ‘}’ token
       | ~                   
 Compilation failed
 96bc7de
+Fri 12 Aug 2022 10:15:15 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:138:17: error: incompatible type for argument 3 of ‘sumaV’
+  138 |   sumaV(v1, v2, *c)
+      |                 ^~
+      |                 |
+      |                 Vector
+exercises.c:111:45: note: expected ‘Vector *’ but argument is of type ‘Vector’
+  111 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                                    ~~~~~~~~~^
+exercises.c:138:20: error: expected ‘;’ before ‘}’ token
+  138 |   sumaV(v1, v2, *c)
+      |                    ^
+      |                    ;
+  139 | }
+      | ~                   
+Compilation failed
+5bc65b3
