@@ -600,3 +600,36 @@ exercises.c:64:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 e6916e8
+Fri 12 Aug 2022 07:25:38 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:11: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   61 |   strcpy(p.nombre[],nombre);
+      |           ^
+      |           ->
+exercises.c:61:19: error: expected expression before ‘]’ token
+   61 |   strcpy(p.nombre[],nombre);
+      |                   ^
+exercises.c:62:11: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   62 |   strcpy(p.rut[],rut);
+      |           ^
+      |           ->
+exercises.c:62:16: error: expected expression before ‘]’ token
+   62 |   strcpy(p.rut[],rut);
+      |                ^
+exercises.c:63:4: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   63 |   p.edad[] = edad;
+      |    ^
+      |    ->
+exercises.c:63:10: error: expected expression before ‘]’ token
+   63 |   p.edad[] = edad;
+      |          ^
+exercises.c:64:10: error: returning ‘Persona **’ from a function with incompatible return type ‘Persona *’ [-Werror=incompatible-pointer-types]
+   64 |   return &p;
+      |          ^~
+exercises.c:64:10: error: function returns address of local variable [-Werror=return-local-addr]
+cc1: all warnings being treated as errors
+Compilation failed
+7ce3951
