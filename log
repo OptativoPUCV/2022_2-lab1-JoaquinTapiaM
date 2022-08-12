@@ -1015,3 +1015,14 @@ exercises.c:83:16: error: ‘v’ is used uninitialized in this function [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 21f8382
+Fri 12 Aug 2022 09:30:22 PM UTC: 
+ exercises.c | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:82:16: error: ‘v’ is used uninitialized in this function [-Werror=uninitialized]
+   82 |   v->capacidad = n;
+      |   ~~~~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+26305e4
