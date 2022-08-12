@@ -12,7 +12,7 @@ y en c almacena el valor de la suma de a más b.
 */
 
 void suma(int a, int b, int * c) {
-    
+  *c = a + b;
 }
 
 /*
@@ -37,13 +37,16 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-
+  int i;
+  i=n-m;
+  int *b=(a+i);
+  sumaN(b,m);
 }
 
 /*
 Ejercicio 3.
 Considerando la estructura Persona, programe la función
-crearPersona(...), la cual crea una nueva persona con 
+crearPersona(...),    la cual crea una nueva persona con 
 los datos correspondientes y retorna un puntero al dato 
 recién creado.
 */
@@ -55,6 +58,8 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
+  Persona*
+  strcpy(Persona.nombre,"")
    return NULL;
 }
 
