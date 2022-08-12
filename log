@@ -71,3 +71,13 @@ exercises.c:42:8: error: variable ‘b’ set but not used [-Werror=unused-but-s
 cc1: all warnings being treated as errors
 Compilation failed
 1a5975c
+Fri 12 Aug 2022 01:10:23 PM UTC: 
+ exercises.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:11: error: expected expression before ‘]’ token
+   40 |   sumaN(a[],m);
+      |           ^
+Compilation failed
+7cc0c0f
