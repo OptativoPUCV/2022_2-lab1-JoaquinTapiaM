@@ -330,3 +330,35 @@ test.c:244:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 6ff16f8
+Fri 12 Aug 2022 01:26:46 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:41:11: error: expected ‘)’ before ‘+’ token
+   41 |   int *b(a+i);
+      |           ^
+      |           )
+exercises.c:42:16: error: ‘b’ undeclared (first use in this function)
+   42 |   return sumaN(b[],m);
+      |                ^
+exercises.c:42:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:42:18: error: expected expression before ‘]’ token
+   42 |   return sumaN(b[],m);
+      |                  ^
+exercises.c:42:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   42 |   return sumaN(b[],m);
+      |          ^~~~~
+exercises.c:39:6: note: declared here
+   39 | void sumaNultimos(int a[], int n, int m, int * suma) {
+      |      ^~~~~~~~~~~~
+exercises.c:40:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   40 |   int i = n-m;
+      |       ^
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:1: error: expected ‘;’ before ‘}’ token
+   61 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+2b561b0
