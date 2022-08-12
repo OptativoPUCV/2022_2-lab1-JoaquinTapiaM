@@ -717,3 +717,13 @@ exercises.c:83:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 30e0316
+Fri 12 Aug 2022 08:35:28 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:3: error: conversion to non-scalar type requested
+   81 |   Vector* v = (Vector) calloc (n,sizeof(Vector));
+      |   ^~~~~~
+Compilation failed
+67ad25c
