@@ -1384,3 +1384,16 @@ exercises.c:14:31: note: expected ‘int *’ but argument is of type ‘int’
 cc1: all warnings being treated as errors
 Compilation failed
 cde8c8d
+Fri 12 Aug 2022 10:00:47 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:114:40: error: expected ‘;’ before ‘}’ token
+  114 |     c->datos[i]=a->datos[i]+b->datos[i]
+      |                                        ^
+      |                                        ;
+  115 | }
+      | ~                                       
+Compilation failed
+935da36
