@@ -95,3 +95,34 @@ exercises.c:41:8: error: variable ‘b’ set but not used [-Werror=unused-but-s
 cc1: all warnings being treated as errors
 Compilation failed
 5bed96b
+Fri 12 Aug 2022 01:19:27 PM UTC: 
+ exercises.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:42:11: error: expected expression before ‘]’ token
+   42 |   sumaN(b[],m);
+      |           ^
+exercises.c:41:8: error: variable ‘b’ set but not used [-Werror=unused-but-set-variable]
+   41 |   int *b = (a+i);
+      |        ^
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:3: error: unknown type name ‘Pesona’; did you mean ‘Persona’?
+   61 |   Pesona pers;
+      |   ^~~~~~
+      |   Persona
+exercises.c:62:10: error: ‘perona’ undeclared (first use in this function); did you mean ‘Persona’?
+   62 |   strcpy(perona.nombre,nombre);
+      |          ^~~~~~
+      |          Persona
+exercises.c:62:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:63:10: error: ‘persona’ undeclared (first use in this function); did you mean ‘Persona’?
+   63 |   strcpy(persona.rut,rut);
+      |          ^~~~~~~
+      |          Persona
+exercises.c:61:10: error: unused variable ‘pers’ [-Werror=unused-variable]
+   61 |   Pesona pers;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+853d1fa
