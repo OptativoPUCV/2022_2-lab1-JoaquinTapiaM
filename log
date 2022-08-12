@@ -461,3 +461,23 @@ exercises.c:63:11: error: expected expression before ‘.’ token
       |           ^
 Compilation failed
 92b7665
+Fri 12 Aug 2022 07:18:02 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:18: error: expected expression before ‘.’ token
+   61 |   strcpy(persona*.nombre,nombre);
+      |                  ^
+exercises.c:62:18: error: expected expression before ‘.’ token
+   62 |   strcpy(persona*.rut,rut);
+      |                  ^
+exercises.c:63:10: error: ‘persona’ is a pointer; did you mean to use ‘->’?
+   63 |   persona.edad* = edad;
+      |          ^
+      |          ->
+exercises.c:63:17: error: expected expression before ‘=’ token
+   63 |   persona.edad* = edad;
+      |                 ^
+Compilation failed
+aab97e2
