@@ -40,7 +40,7 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
   int i;
   i = n - m;
   int *b = (a+i);
-  sumaN(b,m);
+  sumaN(b[],m);
 }
 
 /*
@@ -58,6 +58,7 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
+  
    return NULL;
 }
 
