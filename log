@@ -1403,3 +1403,51 @@ Fri 12 Aug 2022 10:00:53 PM UTC:
  tests:  7|1
 total_score: 60/70
 1cdfad9
+Fri 12 Aug 2022 10:11:28 PM UTC: 
+ exercises.c | 16 +++++++++++++++-
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:126:8: error: incompatible types when assigning to type ‘Vector’ from type ‘Vector *’
+  126 |   v2 = crearVector(2);
+      |        ^~~~~~~~~~~
+exercises.c:130:20: error: incompatible type for argument 1 of ‘asignarValor’
+  130 |       asignarValor(v2, i, b1);
+      |                    ^~
+      |                    |
+      |                    Vector
+exercises.c:93:28: note: expected ‘Vector *’ but argument is of type ‘Vector’
+   93 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+exercises.c:134:20: error: incompatible type for argument 1 of ‘asignarValor’
+  134 |       asignarValor(v2, i, b2);
+      |                    ^~
+      |                    |
+      |                    Vector
+exercises.c:93:28: note: expected ‘Vector *’ but argument is of type ‘Vector’
+   93 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+exercises.c:137:13: error: incompatible type for argument 2 of ‘sumaV’
+  137 |   sumaV(v1, v2, *c)
+      |             ^~
+      |             |
+      |             Vector
+exercises.c:111:33: note: expected ‘Vector *’ but argument is of type ‘Vector’
+  111 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                        ~~~~~~~~~^
+exercises.c:137:17: error: incompatible type for argument 3 of ‘sumaV’
+  137 |   sumaV(v1, v2, *c)
+      |                 ^~
+      |                 |
+      |                 Vector
+exercises.c:111:45: note: expected ‘Vector *’ but argument is of type ‘Vector’
+  111 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                                    ~~~~~~~~~^
+exercises.c:137:20: error: expected ‘;’ before ‘}’ token
+  137 |   sumaV(v1, v2, *c)
+      |                    ^
+      |                    ;
+  138 | }
+      | ~                   
+Compilation failed
+e4f69ca
