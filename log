@@ -18,3 +18,19 @@ Fri 12 Aug 2022 12:50:44 PM UTC:
  tests:  1|6
 total_score: 10/70
 b75599d
+Fri 12 Aug 2022 12:55:55 PM UTC: 
+ exercises.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:34: error: expected expression before ‘]’ token
+   64 |   strcpy("persona.nombre",nombre[]);
+      |                                  ^
+exercises.c:65:28: error: expected expression before ‘]’ token
+   65 |   strcpy("persona.rut",rut[]);
+      |                            ^
+exercises.c:66:14: error: assignment to expression with array type
+   66 |   persona.rut=edad;
+      |              ^
+Compilation failed
+6331d24
