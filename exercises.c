@@ -78,7 +78,9 @@ typedef struct {
 } Vector;
 
 Vector* crearVector(int n) {
+  
   Vector* v;
+  v->datos=n;
   return v;
 }
 

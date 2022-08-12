@@ -1309,3 +1309,17 @@ exercises.c:82:10: error: ‘v’ is used uninitialized in this function [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 e06136d
+Fri 12 Aug 2022 09:53:18 PM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:83:11: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   83 |   v->datos=n;
+      |           ^
+exercises.c:83:11: error: ‘v’ is used uninitialized in this function [-Werror=uninitialized]
+   83 |   v->datos=n;
+      |   ~~~~~~~~^~
+cc1: all warnings being treated as errors
+Compilation failed
+414b9f6
