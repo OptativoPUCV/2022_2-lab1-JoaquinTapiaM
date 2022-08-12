@@ -875,3 +875,14 @@ exercises.c:83:4: error: ‘v’ is a pointer; did you mean to use ‘->’?
       |    ->
 Compilation failed
 7bf8509
+Fri 12 Aug 2022 09:07:39 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:83:4: error: ‘v’ is a pointer; did you mean to use ‘->’?
+   83 |   v.capacidad = n;
+      |    ^
+      |    ->
+Compilation failed
+ac65eae
