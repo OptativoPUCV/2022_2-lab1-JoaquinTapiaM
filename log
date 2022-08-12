@@ -1081,3 +1081,14 @@ exercises.c:82:4: error: ‘v’ is a pointer; did you mean to use ‘->’?
       |    ->
 Compilation failed
 0189cc6
+Fri 12 Aug 2022 09:33:37 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:82:12: error: ‘v’ is used uninitialized in this function [-Werror=uninitialized]
+   82 |   v->datos = (int*) calloc (n,sizeof(int));
+      |   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+eb25842
