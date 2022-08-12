@@ -150,3 +150,23 @@ exercises.c:59:10: error: unused variable ‘pers’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 dec68d0
+Fri 12 Aug 2022 01:19:54 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:60:10: error: ‘perona’ undeclared (first use in this function); did you mean ‘Persona’?
+   60 |   strcpy(perona.nombre,nombre);
+      |          ^~~~~~
+      |          Persona
+exercises.c:60:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:61:10: error: ‘persona’ undeclared (first use in this function); did you mean ‘Persona’?
+   61 |   strcpy(persona.rut,rut);
+      |          ^~~~~~~
+      |          Persona
+exercises.c:59:11: error: unused variable ‘pers’ [-Werror=unused-variable]
+   59 |   Persona pers;
+      |           ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1f46453
