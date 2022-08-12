@@ -80,7 +80,7 @@ typedef struct {
 Vector* crearVector(int n) {
   
   Vector* v;
-  v->datos=n;
+  v->capacidad=n;
   return v;
 }
 
