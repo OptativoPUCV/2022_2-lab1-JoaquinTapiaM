@@ -1223,3 +1223,22 @@ exercises.c:84:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 1245af3
+Fri 12 Aug 2022 09:48:47 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:82:9: error: ‘vector’ is a pointer; did you mean to use ‘->’?
+   82 |   vector.capacidad = n;
+      |         ^
+      |         ->
+exercises.c:83:9: error: ‘vector’ is a pointer; did you mean to use ‘->’?
+   83 |   vector.datos = (int*)calloc(vector.capacidad,sizeof(int));
+      |         ^
+      |         ->
+exercises.c:83:37: error: ‘vector’ is a pointer; did you mean to use ‘->’?
+   83 |   vector.datos = (int*)calloc(vector.capacidad,sizeof(int));
+      |                                     ^
+      |                                     ->
+Compilation failed
+245eb50
