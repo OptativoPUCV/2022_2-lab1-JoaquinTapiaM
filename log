@@ -565,3 +565,14 @@ exercises.c:63:3: error: invalid type argument of unary ‘*’ (have ‘int’)
 cc1: all warnings being treated as errors
 Compilation failed
 704c6b0
+Fri 12 Aug 2022 07:22:56 PM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:10: error: function returns address of local variable [-Werror=return-local-addr]
+   64 |   return &p;
+      |          ^~
+cc1: all warnings being treated as errors
+Compilation failed
+788527b
