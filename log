@@ -81,3 +81,17 @@ exercises.c:40:11: error: expected expression before ‘]’ token
       |           ^
 Compilation failed
 7cc0c0f
+Fri 12 Aug 2022 01:11:27 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:42:11: error: expected expression before ‘]’ token
+   42 |   sumaN(b[],m);
+      |           ^
+exercises.c:41:8: error: variable ‘b’ set but not used [-Werror=unused-but-set-variable]
+   41 |   int *b=(a+i);
+      |        ^
+cc1: all warnings being treated as errors
+Compilation failed
+5bed96b
