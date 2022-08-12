@@ -1212,3 +1212,14 @@ exercises.c:85:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 509be45
+Fri 12 Aug 2022 09:48:23 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:84:10: error: function returns address of local variable [-Werror=return-local-addr]
+   84 |   return &vector;
+      |          ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1245af3
