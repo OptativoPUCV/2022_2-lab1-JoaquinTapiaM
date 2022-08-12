@@ -245,3 +245,14 @@ exercises.c:61:7: error: ‘pers’ is a pointer; did you mean to use ‘->’?
       |       ->
 Compilation failed
 d0e520d
+Fri 12 Aug 2022 01:23:07 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+test.c: In function ‘crearPersona’:
+exercises.c:59:14: error: ‘pers’ is used uninitialized in this function [-Werror=uninitialized]
+   59 |   strcpy(pers->nombre,nombre);
+      |          ~~~~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+50fbb0a
