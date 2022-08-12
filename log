@@ -1181,3 +1181,20 @@ exercises.c:85:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 9929214
+Fri 12 Aug 2022 09:48:03 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:83:37: error: invalid type argument of ‘->’ (have ‘Vector’)
+   83 |   vector.datos = (int*)calloc(vector->capacidad,sizeof(int));
+      |                                     ^~
+exercises.c:84:10: error: incompatible types when returning type ‘Vector’ but ‘Vector *’ was expected
+   84 |   return vector;
+      |          ^~~~~~
+exercises.c:85:1: error: control reaches end of non-void function [-Werror=return-type]
+   85 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a287f00
