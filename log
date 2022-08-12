@@ -212,3 +212,17 @@ exercises.c:60:21: error: expected ‘;’ before ‘strcpy’
       |   ~~~~~~             
 Compilation failed
 4975502
+Fri 12 Aug 2022 01:21:14 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:11: error: function returns address of local variable [-Werror=return-local-addr]
+   64 |    return ptrPersona;
+      |           ^~~~~~~~~~
+exercises.c:59:11: note: declared here
+   59 |   Persona pers;
+      |           ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+05f4f8e
