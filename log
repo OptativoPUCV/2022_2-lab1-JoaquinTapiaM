@@ -1346,3 +1346,25 @@ Fri 12 Aug 2022 09:56:08 PM UTC:
  tests:  6|2
 total_score: 50/70
 278e62e
+Fri 12 Aug 2022 09:59:40 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:114:42: error: passing argument 3 of ‘suma’ makes pointer from integer without a cast [-Werror=int-conversion]
+  114 |     suma(a->datos[i],b->datos[i],c->datos[i])
+      |                                  ~~~~~~~~^~~
+      |                                          |
+      |                                          int
+exercises.c:14:31: note: expected ‘int *’ but argument is of type ‘int’
+   14 | void suma(int a, int b, int * c) {
+      |                         ~~~~~~^
+exercises.c:114:46: error: expected ‘;’ before ‘}’ token
+  114 |     suma(a->datos[i],b->datos[i],c->datos[i])
+      |                                              ^
+      |                                              ;
+  115 | }
+      | ~                                             
+cc1: all warnings being treated as errors
+Compilation failed
+2cd1cba
