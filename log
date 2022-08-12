@@ -1287,3 +1287,14 @@ exercises.c:83:3: error: ‘vector’ undeclared (first use in this function); d
 exercises.c:83:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 d38bfe4
+Fri 12 Aug 2022 09:51:50 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:82:16: error: ‘v’ is used uninitialized in this function [-Werror=uninitialized]
+   82 |   v->capacidad = n;
+      |   ~~~~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+d2d05e1
