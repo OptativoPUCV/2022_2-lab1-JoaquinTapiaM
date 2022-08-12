@@ -226,3 +226,22 @@ exercises.c:59:11: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 05f4f8e
+Fri 12 Aug 2022 01:22:49 PM UTC: 
+ exercises.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:59:14: error: ‘pers’ is a pointer; did you mean to use ‘->’?
+   59 |   strcpy(pers.nombre,nombre);
+      |              ^
+      |              ->
+exercises.c:60:14: error: ‘pers’ is a pointer; did you mean to use ‘->’?
+   60 |   strcpy(pers.rut,rut);
+      |              ^
+      |              ->
+exercises.c:61:7: error: ‘pers’ is a pointer; did you mean to use ‘->’?
+   61 |   pers.edad=edad;
+      |       ^
+      |       ->
+Compilation failed
+d0e520d
