@@ -935,3 +935,14 @@ exercises.c:88:11: error: expected ‘;’ before ‘}’ token
       | ~          
 Compilation failed
 e0e326f
+Fri 12 Aug 2022 09:11:09 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:83:16: error: ‘v’ is used uninitialized in this function [-Werror=uninitialized]
+   83 |   v->capacidad = n;
+      |   ~~~~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+f088708
